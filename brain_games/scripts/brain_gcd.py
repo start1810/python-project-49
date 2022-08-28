@@ -14,9 +14,9 @@ def main():
         game_status = game_gcd.game()
         game_points +=1
         if game_points == 3:
-            print(f"Congratulations, {user_name}")
+            print(f"Congratulations, {user_name}!")
             return
-    print(f"Let's try again, {user_name}")
+    print(f"Let's try again, {user_name}!")
 
 
 if __name__ == "__main__":

@@ -43,7 +43,7 @@ def main():
         game_status = game()
         game_points +=1
         if game_points == 3:
-            print(f"Congratulations, {user_name}")
+            print(f"Congratulations, {user_name}!")
             break
 
 
