@@ -15,7 +15,7 @@ def main():
         game_points +=1
         if game_points == 3:
             print(f"Congratulations, {user_name}")
-            break
+            return
     print(f"Let's try again, {user_name}")
 
 

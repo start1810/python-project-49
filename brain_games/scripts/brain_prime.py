@@ -1,6 +1,6 @@
 import random
 from .. import cli
-from .. import game_gcd
+from .. import game_prime
 
 
 
@@ -11,7 +11,7 @@ def main():
     game_points = 0
     game_status = True
     while game_status == True:
-        game_status = game_gcd.game()
+        game_status = game_prime.game()
         game_points +=1
         if game_points == 3:
             print(f"Congratulations, {user_name}")
