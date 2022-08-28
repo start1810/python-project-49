@@ -16,7 +16,7 @@ def input_data():
 def ask_question(data):
     start_text = f"\
 Find the greatest common divisor of given numbers.\n\
-Question: {data['first_number']}  {data['second_number']}\n"
+Question: {data['first_number']} {data['second_number']}\n"
     return start_text
 
 
