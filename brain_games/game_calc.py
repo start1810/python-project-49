@@ -2,8 +2,8 @@ import random
 
 
 def input_data():
-    data = {'first_number': random.randint(1,100),\
-            'second_number': random.randint(1,100),\
+    data = {'first_number': random.randint(1, 100),
+            'second_number': random.randint(1, 100),
             'operation': random.choice(['*', '+'])}
     return data
 
@@ -18,6 +18,7 @@ Question: {data['first_number']} {data['operation']} {data['second_number']}\n"
 def get_answer():
     answer = int(input())
     return answer
+
 
 def counting_answer(data):
     if data['operation'] == '*':
@@ -42,8 +43,9 @@ def game():
     correct_answer = counting_answer(data)
     result = check_answer(correct_answer, answer)
     win_text = 'Correct!'
-    lose_text = f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'."
-    if result == True:
+    lose_text = f"\
+'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'."
+    if result is True:
         print(win_text)
     else:
         print(lose_text)
