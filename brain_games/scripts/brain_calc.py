@@ -12,7 +12,8 @@ def main():
     game_status = True
     while game_status == True:
         game_status = game_calc.game()
-        game_points +=1
+        if game_status == False:
+            game_points +=1
         if game_points == 3:
             print(f"Congratulations, {user_name}!")
             return
