@@ -9,13 +9,13 @@ def input_data():
     progression_index = 1
     while progression_index < progression_length:
         progression_member = arithmetic_progression[progression_index - 1]\
-                             + general_member
+                        + general_member
         arithmetic_progression.append(progression_member)
         progression_index += 1
     selected_index = random.randint(0, progression_length - 1)
     selected_member = arithmetic_progression[selected_index]
     arithmetic_progression[selected_index] = '..'
-    data = {'progression': arithmetic_progression, \
+    data = {'progression': arithmetic_progression,
             'selected_member': selected_member}
     return data
 
