@@ -7,7 +7,7 @@ def input_data():
     first_num = gcd * simple_numb.pop(random.randint(0, len(simple_numb) - 1))\
                     * simple_numb.pop(random.randint(0, len(simple_numb) - 1))
     second_num = gcd * simple_numb.pop(random.randint(0, len(simple_numb) - 1))
-    data = {'first_number': first_num, 
+    data = {'first_number': first_num,
             'second_number': second_num,
             'gcd': gcd}
     return data
